@@ -44,4 +44,11 @@ def proses():
     bmi = entry_bmi.get().strip()
     riwayat = combo_riwayat.get()
 
+    # validasi
+    if nama == "" or usia == "" or gula == "" or bmi == "" or riwayat == "":
+        messagebox.showwarning("Peringatan", "Semua data harus diisi!")
+        return
+    if not usia.isdigit() or int(usia) < 1 or int(usia) > 120:
+        messagebox.showwarning("Peringatan", "Usia harus angka 1 - 120!")
+        return
     
