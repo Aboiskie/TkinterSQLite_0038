@@ -90,3 +90,11 @@ def lihat_data():
         tabel.insert("", tk.END, values=baris)
 
 
+# Tampilan GUI
+root = tk.Tk()
+root.title("Prediksi Risiko Diabetes")
+
+tk.Label(root, text="Nama Pasien").grid(row=0, column=0, padx=10, pady=5, sticky="w")
+entry_nama = tk.Entry(root, width=25)
+entry_nama.grid(row=0, column=1)
+
