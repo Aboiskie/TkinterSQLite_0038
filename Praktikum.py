@@ -120,3 +120,5 @@ tk.Button(root, text="Lihat Data", width=12, command=lihat_data).grid(row=5, col
 label_hasil = tk.Label(root, text="Hasil prediksi", font=("Arial", 12, "bold"), width=30, height=2, bg="lightgray")
 label_hasil.grid(row=6, column=0, columnspan=2, padx=10, pady=10)
 
+root.mainloop()
+conn.close()
