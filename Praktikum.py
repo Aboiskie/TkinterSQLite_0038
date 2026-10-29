@@ -98,3 +98,11 @@ tk.Label(root, text="Nama Pasien").grid(row=0, column=0, padx=10, pady=5, sticky
 entry_nama = tk.Entry(root, width=25)
 entry_nama.grid(row=0, column=1)
 
+tk.Label(root, text="Usia").grid(row=1, column=0, padx=10, pady=5, sticky="w")
+entry_usia = tk.Entry(root, width=25)
+entry_usia.grid(row=1, column=1)
+
+tk.Label(root, text="Gula Darah (mg/dL)").grid(row=2, column=0, padx=10, pady=5, sticky="w")
+entry_gula = tk.Entry(root, width=25)
+entry_gula.grid(row=2, column=1)
+
